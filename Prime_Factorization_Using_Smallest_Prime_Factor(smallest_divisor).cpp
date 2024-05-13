@@ -17,7 +17,7 @@ int32_t main ()
     int n;
     cin>>n;
     map<int,int> mp;
-    for(int i=2;i<=sqrt(n);i++) {
+    for(int i=2;i<=sqrt(n);i++) {    // O(sqrt(n))
         if(n%i==0) {
             while(n%i==0) {
                 mp[i]++;
